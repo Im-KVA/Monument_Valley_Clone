@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b272d0b70a41f5648b65bc61e2b22728, type: 3}
+  m_Name: Level_1
+  m_EditorClassIdentifier: 
+  materialColors:
+  - material: {fileID: 2100000, guid: 55a283cd7e88f4586adfefe88f106e5f, type: 2}
+    color: {r: 0, g: 0, b: 0, a: 1}
+  - material: {fileID: 2100000, guid: ee49ccce56c15498dba0d38c1cc88ccc, type: 2}
+    color: {r: 0.4385457, g: 0.6886792, b: 0.64785683, a: 1}
+  - material: {fileID: 2100000, guid: 9150fab2ee720481c855d7ddb3072c8d, type: 2}
+    color: {r: 0.8207547, g: 0.5428339, b: 0.32133314, a: 1}
+  - material: {fileID: 2100000, guid: acccc68393f38464f85de0b765cd4b63, type: 2}
+    color: {r: 0.62264144, g: 0.59586304, b: 0.5315949, a: 1}
+  - material: {fileID: 2100000, guid: 40d65103b88234ed7a33816416811d7f, type: 2}
+    color: {r: 0.75471693, g: 0.3666785, b: 0.3858607, a: 1}
+  - material: {fileID: 2100000, guid: e4afd9aaf643e4ca8bf0fc6bc4df5469, type: 2}
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - material: {fileID: 2100000, guid: 6bfc9fe5393be4742a489595965bdbd0, type: 2}
+    color: {r: 1, g: 0, b: 0, a: 1}
+  - material: {fileID: 2100000, guid: 924b4f64b34b74c929020821a3bf520c, type: 2}
+    color: {r: 0.6981132, g: 0.484069, b: 0.484069, a: 1}
+  - material: {fileID: 2100000, guid: 032f7ff6752c84141a9d706e8d6e6afb, type: 2}
+    color: {r: 0.43921566, g: 0.6901961, b: 0.6509804, a: 1}
+  - material: {fileID: 2100000, guid: c815fb4046c62456db9d06af1f724f9f, type: 2}
+    color: {r: 0.88235295, g: 0.78431374, b: 0.62745106, a: 1}
+  - material: {fileID: 2100000, guid: 782e21eaa075641cf85754a82ee27ca5, type: 2}
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - material: {fileID: 2100000, guid: 2a6d26d9649914e3eba67f097cfdb55b, type: 2}
+    color: {r: 1, g: 1, b: 1, a: 1}
