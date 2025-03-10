@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using KVA.SoundManager;
 
 public class MoveObjects : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class MoveObjects : MonoBehaviour
     [SerializeField] private float _moveDuration = 1.5f;
     [SerializeField] private float _moveDelay = 0.3f;
     [SerializeField] private float _snapEffectStrength = 0.1f;
+    private float _lastSoundTime = 0f;
+    private float _soundCooldown = 0.1f;
 
     private Dictionary<GameObject, Vector3> _originalScales = new();
     private int _completedAnimations = 0;
@@ -36,6 +39,8 @@ public class MoveObjects : MonoBehaviour
         if (_isStartMoving) return;
 
         CameraShaker.Instance?.Shake();
+
+        SoundManager.PlaySound(SoundType.PLATECHANGEBLOCK);
 
         StartCoroutine(PlayPunchEffects());
         _isStartMoving = true;
@@ -74,6 +79,13 @@ public class MoveObjects : MonoBehaviour
             sequence.Append(obj.transform.DOMove(targetPos, _moveDuration).SetEase(Ease.InOutQuad))
                     .Join(obj.transform.DORotateQuaternion(targetRot, _moveDuration).SetEase(Ease.InOutQuad))
                     .Append(obj.transform.DOShakeScale(0.3f, _snapEffectStrength, 10, 90, false))
+                    .AppendCallback(() => {
+                        if (Time.time - _lastSoundTime > _soundCooldown)
+                        {
+                            SoundManager.PlaySound(SoundType.PLATECHANGEBLOCK);
+                            _lastSoundTime = Time.time;
+                        }
+                    })
                     .OnComplete(() => CheckDestroy())
                     .Play();
         }

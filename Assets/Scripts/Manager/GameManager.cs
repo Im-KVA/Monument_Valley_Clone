@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Events;
 using DG.Tweening;
+using KVA.SoundManager;
 
 // monitors win condition and stops/pauses gameplay as needed
 public class GameManager : MonoBehaviour
@@ -70,6 +71,8 @@ public class GameManager : MonoBehaviour
         }
         _isGameOver = true;
 
+        SoundManager.PlaySound(SoundType.WIN);
+
         // disable player controls
         _playerController.EnableControls(false);
 
@@ -90,11 +93,13 @@ public class GameManager : MonoBehaviour
     // restart the scene
     public void Restart(float delay)
     {
+        SoundManager.PlaySound(SoundType.CLICKBUTTON);
         StartCoroutine(RestartRoutine(delay));
     }
 
     public void NextLevel(float delay)
     {
+        SoundManager.PlaySound(SoundType.CLICKBUTTON);
         StartCoroutine(LoadNextLevelRoutine(delay));
     }
 

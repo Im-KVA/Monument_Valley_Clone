@@ -672,7 +672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69e614c2f56a247fdbf94a1be43fef06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerController: {fileID: 0}
+  _playerController: {fileID: 0}
   delayTime: 1.5
   awakeEvent:
     m_PersistentCalls:
@@ -1565,5 +1565,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e797b79d146b2664bbf8e90a70d3d069, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 0.25
-  magnitude: 0.5
+  _duration: 0.2
+  _magnitude: 0.1

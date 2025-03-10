@@ -47,8 +47,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2241d5bc6c01c41b2a055bdd74f7747e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkAnimSpeed: 1
-  animator: {fileID: 4650256937756277850}
+  _walkAnimSpeed: 1
+  _animator: {fileID: 4650256937756277850}
 --- !u!114 &8631002856019931114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,8 +61,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c48eddec3730f4b2db9f102f113ca0d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveTime: 0.25
-  cursor: {fileID: 0}
+  _moveTime: 0.25
+  _cursor: {fileID: 0}
 --- !u!1 &6767428621962013197
 GameObject:
   m_ObjectHideFlags: 0

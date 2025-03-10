@@ -1,6 +1,7 @@
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.EventSystems;
+using KVA.SoundManager;
 
 public class BackgroundElements : MonoBehaviour, IPointerDownHandler
 {
@@ -72,5 +73,6 @@ public class BackgroundElements : MonoBehaviour, IPointerDownHandler
     private void DoPunch()
     {
         transform.DOPunchScale(Vector3.one * 0.2f, 0.2f, 10, 0.5f);
+        SoundManager.PlaySound(SoundType.PLATECHANGEBLOCK);
     }
 }

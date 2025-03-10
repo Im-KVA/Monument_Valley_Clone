@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using KVA.SoundManager;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -96,6 +97,8 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
+        SoundManager.PlaySound(SoundType.POP);
+
         // find the best path to the any Nodes under the Clickable; gives the user some flexibility
         List<Node> newPath = _pathfinder.FindBestPath(_currentNode, clickable.ChildNodes);
 
@@ -186,6 +189,8 @@ public class PlayerController : MonoBehaviour
             // wait one frame
             yield return null;
         }
+
+        SoundManager.PlaySound(SoundType.FOOTSTEP);
     }
 
     // snap the Player to the nearest Node in Game view
@@ -260,6 +265,7 @@ public class PlayerController : MonoBehaviour
         {
             return false;
         }
+
         return HasReachedNode(_graph.GoalNode);
     }
 

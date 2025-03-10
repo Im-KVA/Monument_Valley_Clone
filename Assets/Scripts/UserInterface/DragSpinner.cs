@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using KVA.SoundManager;
+using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
@@ -51,13 +52,13 @@ public class DragSpinner : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
     {
         switch (_spinAxis)
         {
-            case (SpinAxis.X):
+            case SpinAxis.X:
                 _axisDirection = Vector3.right;
                 break;
-            case (SpinAxis.Y):
+            case SpinAxis.Y:
                 _axisDirection = Vector3.up;
                 break;
-            case (SpinAxis.Z):
+            case SpinAxis.Z:
                 _axisDirection = Vector3.forward;
                 break;
         }
@@ -71,6 +72,8 @@ public class DragSpinner : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         {
             return;
         }
+
+        SoundManager.PlaySound(SoundType.BEGINDRAG);
 
         onSpinnerDragged?.Invoke();
         _isSpinning = true;
@@ -92,6 +95,7 @@ public class DragSpinner : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         onSpinnerDragged?.Invoke();
         if (_isActive)
         {
+            SoundManager.PlaySound(SoundType.ENDDRAG);
             SnapSpinner();
         }
     }

@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21d5f4f0969aa204bb407628117566c8, type: 3}
+  m_Name: SoundsSO
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: POP
+    volume: 0.6
+    mixer: {fileID: 24300002, guid: e37c377667e7c52408e749bb7cfb7ab2, type: 2}
+    sounds:
+    - {fileID: 8300000, guid: f640106fd9dbc1b4986ecf019af64037, type: 3}
+  - name: BEGINDRAG
+    volume: 1
+    mixer: {fileID: 24300002, guid: e37c377667e7c52408e749bb7cfb7ab2, type: 2}
+    sounds:
+    - {fileID: 8300000, guid: 762fb173c5ab93746947a440db8b6aa6, type: 3}
+  - name: ENDDRAG
+    volume: 1
+    mixer: {fileID: 24300002, guid: e37c377667e7c52408e749bb7cfb7ab2, type: 2}
+    sounds:
+    - {fileID: 8300000, guid: 15b269e59c68ea74f8d66ce619661a9d, type: 3}
+  - name: WIN
+    volume: 1
+    mixer: {fileID: 24300002, guid: e37c377667e7c52408e749bb7cfb7ab2, type: 2}
+    sounds:
+    - {fileID: 8300000, guid: b9622fd3feecdc449a1e0128677a5f7e, type: 3}
+  - name: PRESSPLATE
+    volume: 0.6
+    mixer: {fileID: 24300002, guid: e37c377667e7c52408e749bb7cfb7ab2, type: 2}
+    sounds:
+    - {fileID: 8300000, guid: ec2ffc3555348df4392144aeb927baad, type: 3}
+  - name: PLATECHANGEBLOCK
+    volume: 0.8
+    mixer: {fileID: 24300002, guid: e37c377667e7c52408e749bb7cfb7ab2, type: 2}
+    sounds:
+    - {fileID: 8300000, guid: f63725c095f279449859134e7839886e, type: 3}
+    - {fileID: 8300000, guid: f535e163e96f02b42a0650fda1b6fa4b, type: 3}
+    - {fileID: 8300000, guid: 38f1eed95a05a8c4dbf1a32b54f3ccad, type: 3}
+    - {fileID: 8300000, guid: 9ca902587abc73c4db41f274927df7b9, type: 3}
+    - {fileID: 8300000, guid: b7f4df88fce295344809455ffe71e7dc, type: 3}
+    - {fileID: 8300000, guid: a4dbb6722ba4c384f86ba1769e9bb0fa, type: 3}
+  - name: FOOTSTEP
+    volume: 0.6
+    mixer: {fileID: 24300002, guid: e37c377667e7c52408e749bb7cfb7ab2, type: 2}
+    sounds:
+    - {fileID: 8300000, guid: c2b20eb2d2dc21040927305a29caacf3, type: 3}
+  - name: CLICKBUTTON
+    volume: 1
+    mixer: {fileID: 24300002, guid: e37c377667e7c52408e749bb7cfb7ab2, type: 2}
+    sounds:
+    - {fileID: 8300000, guid: cef8c022be36dbc40b5082b493726fa0, type: 3}
+  - name: BLOCKFALL
+    volume: 0.6
+    mixer: {fileID: 24300002, guid: e37c377667e7c52408e749bb7cfb7ab2, type: 2}
+    sounds:
+    - {fileID: 8300000, guid: d2df2a5245327a446860d28bca352d5a, type: 3}

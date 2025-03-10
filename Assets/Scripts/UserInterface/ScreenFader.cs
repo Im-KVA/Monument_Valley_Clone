@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using KVA.SoundManager;
 using UnityEngine;
 using UnityEngine.UI;
 
